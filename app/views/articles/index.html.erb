@@ -2,3 +2,5 @@
 	<h2><%= link_to article.title.titlecase, article %></h2>
 	<p class="excerpt"><%= article.excerpt %></p>
 <% end %>
+
+<%= paginate articles %>

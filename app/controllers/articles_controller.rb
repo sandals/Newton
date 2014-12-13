@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
 	def index
 		render locals: {
-			articles: Article.all
+			articles: Article.page(params[:page] || 1)
 		}
 	end
 
